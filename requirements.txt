@@ -1,0 +1,31 @@
+# High-Performance Dask Data Pipeline Requirements
+# Optimized for large-scale data processing
+
+# Core Data Processing
+dask[complete]>=2023.12.0
+pyarrow>=14.0.0
+duckdb>=0.9.0
+
+# Distributed Computing
+distributed>=2023.12.0
+cloudpickle>=3.0.0
+
+# Monitoring and Logging
+tqdm>=4.65.0
+psutil>=5.9.0
+
+# Development and Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.7.0
+
+# Optional: For cloud storage (uncomment as needed)
+# s3fs>=2023.12.0  # For AWS S3
+# gcsfs>=2023.12.0  # For Google Cloud Storage
+# adlfs>=2023.12.0  # For Azure Data Lake
+
+# Optional: For advanced monitoring
+# prometheus-client>=0.19.0
+# grafana-api>=1.0.3
