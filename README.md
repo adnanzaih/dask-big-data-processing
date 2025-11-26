@@ -24,3 +24,8 @@ pip install -r requirements.txt
 # Alternative: Install specific versions for production
 pip install "dask[complete]>=2023.12.0" "pyarrow>=14.0.0" "duckdb>=0.9.0"
 ```
+## Usage
+Create the host output directory (important) this is where the database will be saved to, or searched for. 
+```
+docker run -d --name dask-pipeline -v "/local/path/to/output:/home/pipeline/code/output" -v "/local/path/to/json/data:/home/pipeline/code/input:ro" -v "logs:/home/pipeline/code/logs" -e MAX_WORKERS=3 dask-pipeline:v1.0
+```
